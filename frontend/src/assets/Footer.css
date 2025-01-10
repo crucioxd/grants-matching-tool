@@ -1,0 +1,73 @@
+/* Footer Container */
+.footer {
+  background-color: white;
+  color: #4caf50;
+  font-family: "Inter", serif;
+  width: 100%; /* Ensure it stretches across the entire page */
+  position: relative; /* Ensure it is properly positioned */
+  margin-top: 13rem;
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  margin-left: -9rem;
+}
+
+.footer-brand h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-brand p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.footer-links {
+  margin-right: -9rem;
+}
+
+/* Footer Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links ul li {
+  margin: 0;
+}
+
+.footer-links ul li a {
+  color: #4caf50;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #024305;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  color: #ffffff;
+  background-color: #388e3c;
+  font-size: 14px;
+  width: 100%; /* Ensure it stretches across the entire width */
+}

@@ -1,7 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/* src/assets/styles.css */
-
+/* General Styles */
 body {
-  font-family: "Inter", serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.home {
+  position: relative;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
   text-align: center;
-  margin-top: 50px;
+  height: 13rem;
+  padding: 50px 20px;
+  border-bottom-left-radius: 20px; /* Adds rounded corners at the bottom-left */
+  border-bottom-right-radius: 20px; /* Adds rounded corners at the bottom-right */
+  background: linear-gradient(to right, #4caf50, #81c784);
+  color: white;
+}
+
+.hero-image {
+  position: absolute;
+  top: 55px; /* Adjust to position above the hero section */
+  left: 1px; /* Align image to the very left */
+  max-width: 250px; /* Adjust size as needed */
+  height: auto;
+  z-index: 1; /* Ensure image is below text */
+}
+
+.hero-image2 {
+  position: absolute;
+  top: -20px; /* Adjust to position above the hero section */
+  right: -0px; /* Align image to the very right */
+  max-width: 220px; /* Adjust size as needed */
+  height: auto;
+  z-index: 1; /* Ensure image is below text */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensure text is above the image */
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.cta-button {
+  padding: 12px 25px;
+  background-color: white;
+  color: #4caf50;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #c6f3c2;
+  transform: scale(1.1);
+}
+
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+}
+
+.card-button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+/* Call-to-Action Card */
+.cta-card {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cta-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.cta-card-button {
+  padding: 12px 25px;
+  background-color: white;
+  color: #4caf50;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-card-button:hover {
+  background-color: #f1f1f1;
+  color: #388e3c;
+  transform: scale(1.1);
 }

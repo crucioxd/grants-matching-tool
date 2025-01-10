@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Navbar Container */
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  height: 3rem;
+  justify-content: space-between; /* Space between brand and links */
+  align-items: center; /* Center items vertically */
+  background-color: #ffffff; /* White background */
+  color: rgb(24, 159, 9); /* Green text */
+  padding: 10px 20px; /* Spacing inside Navbar */
+  border-bottom-left-radius: 20px; 
+  border-bottom-right-radius: 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(24, 159, 9); /* Green color */
+  text-decoration: none; /* No underline */
+}
+
+.navbar-brand:hover {
+  color: darkgreen; /* Darker green on hover */
+}
+
+/* Navbar Links */
+.navbar-links {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Horizontal layout */
+  gap: 20px; /* Spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Links Style */
+.navbar-links li a {
+  color: rgb(24, 159, 9); /* Green text */
+  text-decoration: none; /* No underline */
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-links li a:hover {
+  color: darkgreen; /* Darker green on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Logout Button */
+.logout-button {
+  background: none; /* Transparent background */
+  border: none; /* No border */
+  color: rgb(24, 159, 9); /* Green text */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.logout-button:hover {
+  color: darkgreen; /* Darker green on hover */
+  text-decoration: underline; /* Underline on hover */
+}
